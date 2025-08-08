@@ -1,0 +1,137 @@
+/* whole */
+*{padding: 0; margin: 0; box-sizing: border-box; font-family: 'Inter', sans-serif;}
+
+/* background image container */
+.container{position: relative; display: flex;}
+.container::before{content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url(background.jpg); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-color: rgba(98, 20, 66, 0.596); opacity: 0.7; z-index: -1;}
+
+/* my portfolio navigation section */
+.logo{width: 150px;}
+
+nav{display: flex; position: fixed; width: 100%; display: flex; align-items: center; justify-content: space-evenly; padding: 15px 30px;}
+nav ul{width: 100%; text-align: center; padding: 10px;}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size:15px;
+    padding: 10px 30px;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    color: #b1284d;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.btn-brief{
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.main-hero{
+    display: flex;
+    max-width: 85%;
+    min-height: 100vh;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    gap: 30px;
+    padding: 50px;
+    width: 85%;
+    min-height: 600px;
+    background: #b4979f;
+    border-radius: 5px;
+}
+
+.content{
+    padding: 20px;
+    justify-content: center;
+}
+
+.content h6, .lastname{
+    color: #b1284d;
+}
+
+.content h2, .content h4{
+    padding-top: 10px;
+}
+
+.content p{
+    padding-top: 15px;
+}
+
+.hero-image{
+    width: 85%;
+    height: auto;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.content, .mypicture{flex: 1 1 100px; min-width: 200px;}
+
+.hero-image:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.reach{
+    padding-top: 50px;
+}
+
+.social-icons{
+    display: flex;
+    padding-top: 10px;
+    gap: 10px;
+}
+
+.fb, .ig, .git, .dc{
+    padding: 15px ;
+    border: 1px solid #8e32a1;
+    border-radius: 30px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+}
+
+/* .bg-img{
+    background-image: url('background.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed; 
+    height: 100vh; 
+    width: 100%; 
+    position: relative; 
+    z-index: -1;
+}
+
+.bg-blur{
+    position: absolute; 
+    top: 0; 
+    width: 0; 
+    z-index: 5;
+    background-color: rgba(196, 136, 172, 0.5);
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+} */
