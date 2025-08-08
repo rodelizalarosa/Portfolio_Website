@@ -2,7 +2,7 @@
 *{padding: 0; margin: 0; box-sizing: border-box; font-family: 'Inter', sans-serif;}
 
 /* background image container */
-.container{position: relative; display: flex;}
+.container{position: relative;}
 .container::before{content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url(images/background.jpg); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-color: rgba(98, 20, 66, 0.596); opacity: 0.7; z-index: -1;}
 
 /* my portfolio navigation section */
@@ -54,7 +54,7 @@ nav ul li a{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-top: 100px;
+    margin: 100px;
     gap: 30px;
     padding: 50px;
     width: 85%;
@@ -67,18 +67,12 @@ nav ul li a{
     padding: 20px;
     justify-content: center;
 }
+.content h1 {font-size: 50px;}
+.content h6, .lastname {color: #b1284d;}
 
-.content h6, .lastname{
-    color: #b1284d;
-}
+.content h2, .content h4 {padding-top: 10px;}
 
-.content h2, .content h4{
-    padding-top: 10px;
-}
-
-.content p{
-    padding-top: 15px;
-}
+.content p {padding-top: 15px;}
 
 .hero-image{
     width: 85%;
@@ -97,7 +91,7 @@ nav ul li a{
 }
 
 .reach{
-    padding-top: 50px;
+    padding-top: 70px;
 }
 
 .social-icons{
@@ -106,12 +100,9 @@ nav ul li a{
     gap: 10px;
 }
 
-.fb, .ig, .git, .dc{
-    padding: 15px ;
-    border: 1px solid #8e32a1;
-    border-radius: 30px;
-    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
-}
+.fb, .ig, .git, .dc {padding: 15px; border: 1px solid #8e32a1; border-radius: 30px; box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);}
+
+
 
 /* .bg-img{
     background-image: url('background.jpg'); 
